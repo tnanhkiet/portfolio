@@ -567,6 +567,7 @@ body.light-theme {
 /*=============== WORK ===============*/
 .work__container {
   padding-top: 1rem;
+  justify-content: center;
 }
 .work__filters {
   display: flex;

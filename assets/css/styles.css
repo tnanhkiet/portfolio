@@ -120,6 +120,40 @@ img {
 .change-theme:hover {
   color: var(--first-color);
 }
+/*=============== LANGUAGE SWITCHER ===============*/
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+  margin-right: .5rem;
+}
+.lang-btn {
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--text-color-light);
+  padding: .2rem .5rem;
+  border-radius: .375rem;
+  font-size: var(--smaller-font-size);
+  line-height: 1;
+  transition: .3s;
+}
+.lang-btn:hover {
+  color: var(--first-color);
+  border-color: var(--first-color);
+}
+.lang-btn.active {
+  background: var(--first-color);
+  color: var(--body-color);
+  border-color: var(--first-color);
+}
+/* Light theme adjustments */
+.light-theme .lang-btn {
+  color: var(--title-color);
+  border-color: var(--text-color-light);
+}
+.light-theme .lang-btn.active {
+  color: var(--body-color);
+}
 /*========== Variables Dark theme ==========*/
 body.light-theme {
   --title-color: hsl(var(--second-hue), 15%, 15%);
@@ -1036,4 +1070,9 @@ body.light-theme {
 }
 .toast--error .toast__icon {
   color: #ff623d;
+}
+
+/* Ensure language switch aligns to the right in the nav */
+.nav .lang-switch {
+  margin-left: auto;
 }

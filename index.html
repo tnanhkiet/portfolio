@@ -60,7 +60,12 @@
                 </ul>
             </div>
 
-            <!-- Theme Change Button -->
+            <!-- Language Switcher + Theme -->
+            <div class="lang-switch" aria-label="Language switcher">
+                <button class="lang-btn" data-lang="vi" id="lang-vi" type="button">VI</button>
+                <span style="opacity:.6;padding:0 .25rem;">|</span>
+                <button class="lang-btn" data-lang="en" id="lang-en" type="button">EN</button>
+            </div>
             <i class='bx bx-moon change-theme' id="theme-button"></i>
         </nav>
     </header>
@@ -76,7 +81,7 @@
                     <h3 class="home__education">
                         <p>Front-end Developer</p>
                         <div class="home__buttons">
-                            <a href="./assets/pdf/CV_Frontend_TruongNguyenAnhKiet_VI.pdf" download="" class="button button--ghost" target="_blank">
+                            <a id="download-cv" href="./assets/pdf/CV_Frontend_TruongNguyenAnhKiet_VI.pdf" download="" class="button button--ghost" target="_blank">
                                 Tải CV
                             </a>
                             <a href="#about" class="button">Giới Thiệu</a>
@@ -117,7 +122,7 @@
                         <div class="about__box">
                             <i class='bx bx-award about__icon'></i>
                             <h3 class="about__title">Kinh Nghiệm</h3>
-                            <span class="about__subtitle">Trên 1 Năm Kinh Nghiệm</span>
+                            <span class="about__subtitle">Hai Năm Kinh Nghiệm</span>
                         </div>
 
                         <div class="about__box">
@@ -129,15 +134,13 @@
                         <div class="about__box">
                             <i class='bx bxs-building-house about__icon'></i>
                             <h3 class="about__title">Đã Từng</h3>
-                            <span class="about__subtitle">Làm Việc Tại 2 Công Ty</span>
+                            <span class="about__subtitle">Làm Việc Tại 3 Công Ty</span>
                         </div>
                     </div>
 
                     <p class="about__description">
-                        Mục tiêu nghề nghiệp của tôi là trở thành một Front-end Developer chuyên nghiệp, có khả năng làm việc với các dự án phức tạp và nâng cao trình độ chuyên môn về lập trình JavaScript. Tôi mong muốn được phát triển sự nghiệp của mình trong lĩnh vực công nghệ.
-                    </p>
-
-                    <a href="#contact" class="button">Liên Lạc</a>
+                        Tôi mong muốn tìm kiếm một vị trí Front-end Developer ổn định và lâu dài, nơi có thể đóng góp vào việc phát triển các sản phẩm web có hiệu suất cao và trải nghiệm người dùng mượt mà. Với kinh nghiệm trong ReactJS, Next.js và TypeScript, tôi luôn chú trọng vào kiến trúc phần mềm rõ ràng, tối ưu hóa hiệu năng, và UI/UX tinh gọn nhằm mang lại giá trị thiết thực cho doanh nghiệp và trải nghiệm tốt nhất cho người dùng.
+                    <!-- <a href="#contact" class="button">Liên Lạc</a> -->
                 </div>
             </div>
         </section>
@@ -153,6 +156,69 @@
 
                     <div class="skills__box">
                         <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">ReactJS</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">NextJS</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">TailwindCSS</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Ant Design</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Shadcn/ui</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">TypeScript</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
 
                             <div class="skills__data">
                                 <i class='bx bx-check-circle'></i>
@@ -167,38 +233,62 @@
                                 <i class='bx bx-check-circle'></i>
 
                                 <div>
-                                    <h3 class="skills__name">TypeScript</h3>
+                                    <h3 class="skills__name">SASS/SCSS</h3>
                                     <!-- <span class="skills__level">Cơ Bản</span> -->
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="skills__group">
-                            
-                            <div class="skills__data">
-                                <i class='bx bx-check-circle'></i>
-
-                                <div>
-                                    <h3 class="skills__name">ReactJS</h3>
-                                    <!-- <span class="skills__level">Cơ Bản</span> -->
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bx-check-circle'></i>
-
-                                <div>
-                                    <h3 class="skills__name">JavaScript</h3>
-                                    <!-- <span class="skills__level">Cơ Bản</span> -->
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
                 <div class="skills__content">
                     <h3 class="skills__title">Back-end Developer</h3>
                     <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">.Net Core</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">EF Core</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">ExpressJS</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">NestJS</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">TypeORM</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+                        </div>
                         <div class="skills__group">
                             <div class="skills__data">
                                 <i class='bx bx-check-circle'></i>
@@ -213,13 +303,20 @@
                                 <i class='bx bx-check-circle'></i>
 
                                 <div>
-                                    <h3 class="skills__name">.Net Core</h3>
+                                    <h3 class="skills__name">JavaScript</h3>
                                     <!-- <span class="skills__level">Cơ Bản</span> -->
                                 </div>
                             </div>
 
-                        </div>
-                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-check-circle'></i>
+
+                                <div>
+                                    <h3 class="skills__name">TypeScript</h3>
+                                    <!-- <span class="skills__level">Cơ Bản</span> -->
+                                </div>
+                            </div>
+
                             <div class="skills__data">
                                 <i class='bx bx-check-circle'></i>
 
@@ -246,30 +343,30 @@
 
         <!--=============== WORK ===============-->
         <section class="work section" id="work">
-            <span class="section__subtitle">My Portfolio</span>
-            <h2 class="section__title">Các Sản Phẩm Của Tôi</h2>
+            <span class="section__subtitle">Project</span>
+            <h2 class="section__title">Các Dự Án Của Tôi</h2>
 
             <div class="work__container container grid">
                 <div class="work__card mix web">
-                    <img src="./assets/img/the_band.jpg" alt="" class="work__img">
+                    <img src="./assets/img/golf4plusvn.png" alt="golf4plusvn" class="work__img">
 
-                    <h3 class="work__title">The Band</h3>
-                    <a href="https://tnanhkiet.github.io/the_band/" target="_blank" class="work__button">
+                    <h3 class="work__title">Golf 4 Plus</h3>
+                    <a href="https://golf4plusvn.com/" target="_blank" class="work__button">
                         Sản Phẩm <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
                 </div>
 
                 <div class="work__card mix web">
-                    <img src="./assets/img/k_mobile.jpg" alt="" class="work__img">
+                    <img src="./assets/img/cloud9team.png" alt="cloud9team" class="work__img">
 
-                    <h3 class="work__title">K Mobile</h3>
-                    <a href="https://tnanhkiet.github.io/k_mobile/" target="_blank" class="work__button">
+                    <h3 class="work__title">Cloud 9 Team</h3>
+                    <a href="https://vps-web-dusky.vercel.app/vi/" target="_blank" class="work__button">
                         Sản Phẩm <i class='bx bx-right-arrow-alt work__icon'></i>
                     </a>
                 </div>
 
                 <div class="work__card mix movil">
-                    <img src="./assets/img/music_player.jpg" alt="" class="work__img">
+                    <img src="./assets/img/music_player.jpg" alt="music_player" class="work__img">
 
                     <h3 class="work__title">Music Player</h3>
                     <a href="https://tnanhkiet.github.io/music_player/" target="_blank" class="work__button">
@@ -278,7 +375,7 @@
                 </div>
 
                 <div class="work__card mix movil">
-                    <img src="./assets/img/wordiee.png" alt="" class="work__img">
+                    <img src="./assets/img/wordiee.png" alt="wordiee" class="work__img">
 
                     <h3 class="work__title">Wordiee</h3>
                     <a href="https://wordiee-roan.vercel.app/" target="_blank" class="work__button">
@@ -377,7 +474,7 @@
                     <a href="#about" class="footer__link">Giới Thiệu</a>
                 </li>
                 <li>
-                    <a href="#work" class="footer__link">Sản Phẩm</a>
+                    <a href="#work" class="footer__link">Dự Án</a>
                 </li>
             </ul>
 
@@ -391,7 +488,7 @@
             </ul>
 
             <span class="footer__copy">
-                &#169; Trương Nguyễn Anh Kiệt. All rights reserved
+                &#169; Truong Nguyen Anh Kiet. All rights reserved
             </span>
         </div>
     </footer>
@@ -425,6 +522,226 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="./assets/js/main.js"></script>
-</body>
+    <script>
+        (function () {
+            const cvPaths = {
+                vi: './assets/pdf/CV_Frontend_TruongNguyenAnhKiet_vi.pdf',
+                en: './assets/pdf/CV_Frontend_TruongNguyenAnhKiet_en.pdf'
+            };
+
+            const translations = {
+                vi: {
+                    'nav.logo': 'Kiệt',
+                    'home.greeting': 'Xin chào, tôi là',
+                    'home.name': 'Trương Nguyễn Anh Kiệt',
+                    'home.downloadCvLabel': 'Tải CV',
+                    'home.aboutBtn': 'Giới Thiệu',
+                    'home.scrollDown': 'Trượt Xuống',
+
+                    'about.subtitle': 'Giới Thiệu',
+                    'about.title': 'Trương Nguyễn Anh Kiệt',
+                    'about.info1.title': 'Kinh Nghiệm',
+                    'about.info1.subtitle': 'Hai Năm Kinh Nghiệm',
+                    'about.info2.title': 'Hoàn Thành',
+                    'about.info2.subtitle': '10+ Dự Án',
+                    'about.info3.title': 'Đã Từng',
+                    'about.info3.subtitle': 'Làm Việc Tại 3 Công Ty',
+                    'about.description': 'Tôi mong muốn tìm kiếm một vị trí Frontend Developer ổn định và lâu dài, nơi có thể đóng góp vào việc phát triển các sản phẩm web có hiệu suất cao và trải nghiệm người dùng mượt mà. Với kinh nghiệm trong ReactJS, Next.js và TypeScript, tôi luôn chú trọng vào kiến trúc phần mềm rõ ràng, tối ưu hóa hiệu năng, và UI/UX tinh gọn nhằm mang lại giá trị thiết thực cho doanh nghiệp và trải nghiệm tốt nhất cho người dùng.',
+
+                    'skills.subtitle': 'Kỹ Năng',
+                    'skills.title': 'Kỹ Năng Của Tôi',
+
+                    'work.title': 'Các Dự Án Của Tôi',
+                    'work.liveDemo': 'Sản Phẩm',
+
+                    'contact.subtitle': 'Liên Lạc',
+                    'contact.title': 'Liên Lạc Với Tôi',
+                    'contact.connectTitle': 'Kết Nối Với Tôi',
+                    'contact.connectBtn': 'Kết Nối',
+                    'contact.formTitle': 'Để Lại Lời Nhắn',
+                    'contact.nameLabel': 'Tên',
+                    'contact.namePlaceholder': 'Tên của bạn',
+                    'contact.emailLabel': 'Email',
+                    'contact.emailPlaceholder': 'Địa chỉ email',
+                    'contact.messageLabel': 'Lời nhắn',
+                    'contact.messagePlaceholder': 'Vui lòng để lại lời nhắn',
+                    'contact.submit': 'Gửi Tin Nhắn',
+
+                    'footer.title': 'Kiệt',
+                    'footer.home': 'Trang Chủ',
+                    'footer.about': 'Giới Thiệu',
+                    'footer.projects': 'Dự Án'
+                },
+                en: {
+                    'nav.logo': 'Kiet',
+                    'home.greeting': 'Hello, I am',
+                    'home.name': 'Truong Nguyen Anh Kiet',
+                    'home.downloadCvLabel': 'Download CV',
+                    'home.aboutBtn': 'About',
+                    'home.scrollDown': 'Scroll Down',
+
+                    'about.subtitle': 'About',
+                    'about.title': 'Truong Nguyen Anh Kiet',
+                    'about.info1.title': 'Experience',
+                    'about.info1.subtitle': 'Two Years Experience',
+                    'about.info2.title': 'Completed',
+                    'about.info2.subtitle': '10+ Projects',
+                    'about.info3.title': 'Formerly',
+                    'about.info3.subtitle': 'Worked at 3 Companies',
+                    'about.description': 'I’m seeking a long-term Frontend Developer position where I can contribute to building high-performance web applications with smooth and intuitive user experiences. With strong expertise in ReactJS, Next.js, and TypeScript, I focus on clean software architecture, performance optimization, and refined UI/UX design to deliver real business value and exceptional experiences for users.',
+
+                    'skills.subtitle': 'Skills',
+                    'skills.title': 'My Skills',
+
+                    'work.title': 'My Projects',
+                    'work.liveDemo': 'Live Demo',
+
+                    'contact.subtitle': 'Contact',
+                    'contact.title': 'Contact Me',
+                    'contact.connectTitle': 'Connect with Me',
+                    'contact.connectBtn': 'Contact',
+                    'contact.formTitle': 'Leave a Message',
+                    'contact.nameLabel': 'Name',
+                    'contact.namePlaceholder': 'Your name',
+                    'contact.emailLabel': 'Email',
+                    'contact.emailPlaceholder': 'Email address',
+                    'contact.messageLabel': 'Message',
+                    'contact.messagePlaceholder': 'Please leave a message',
+                    'contact.submit': 'Send Message',
+
+                    'footer.title': 'Kiet',
+                    'footer.home': 'Home',
+                    'footer.about': 'About',
+                    'footer.projects': 'Projects'
+                }
+            };
+
+            function t(lang, key) {
+                return (translations[lang] && translations[lang][key]) || key;
+            }
+
+            function applyLanguage(lang) {
+                localStorage.setItem('lang', lang);
+                document.documentElement.setAttribute('lang', lang);
+
+                const logo = document.querySelector('.nav__logo');
+                if (logo) logo.textContent = t(lang, 'nav.logo');
+
+                const greeting = document.querySelector('.home__greeting');
+                if (greeting) greeting.textContent = t(lang, 'home.greeting');
+
+                const homeName = document.querySelector('.home__name');
+                if (homeName) homeName.textContent = t(lang, 'home.name');
+
+                const downloadCv = document.getElementById('download-cv');
+                if (downloadCv) {
+                    downloadCv.href = (cvPaths[lang] || cvPaths.vi);
+                    downloadCv.textContent = t(lang, 'home.downloadCvLabel');
+                }
+
+                const aboutBtn = document.querySelector('a.button[href="#about"]');
+                if (aboutBtn) aboutBtn.textContent = t(lang, 'home.aboutBtn');
+
+                const scrollName = document.querySelector('.home__scroll-name');
+                if (scrollName) scrollName.textContent = t(lang, 'home.scrollDown');
+
+                const aboutSubtitle = document.querySelector('#about .section__subtitle');
+                if (aboutSubtitle) aboutSubtitle.textContent = t(lang, 'about.subtitle');
+
+                const aboutTitle = document.querySelector('#about .section__title');
+                if (aboutTitle) aboutTitle.textContent = t(lang, 'about.title');
+
+                const aboutTitles = document.querySelectorAll('#about .about__box .about__title');
+                if (aboutTitles[0]) aboutTitles[0].textContent = t(lang, 'about.info1.title');
+                if (aboutTitles[1]) aboutTitles[1].textContent = t(lang, 'about.info2.title');
+                if (aboutTitles[2]) aboutTitles[2].textContent = t(lang, 'about.info3.title');
+
+                const aboutSubtitles = document.querySelectorAll('#about .about__box .about__subtitle');
+                if (aboutSubtitles[0]) aboutSubtitles[0].textContent = t(lang, 'about.info1.subtitle');
+                if (aboutSubtitles[1]) aboutSubtitles[1].textContent = t(lang, 'about.info2.subtitle');
+                if (aboutSubtitles[2]) aboutSubtitles[2].textContent = t(lang, 'about.info3.subtitle');
+
+                const aboutDesc = document.querySelector('#about .about__description');
+                if (aboutDesc) aboutDesc.textContent = t(lang, 'about.description');
+
+                const skillsSubtitle = document.querySelector('#skills .section__subtitle');
+                if (skillsSubtitle) skillsSubtitle.textContent = t(lang, 'skills.subtitle');
+                const skillsTitle = document.querySelector('#skills .section__title');
+                if (skillsTitle) skillsTitle.textContent = t(lang, 'skills.title');
+
+                const workTitle = document.querySelector('#work .section__title');
+                if (workTitle) workTitle.textContent = t(lang, 'work.title');
+
+                document.querySelectorAll('.work__button').forEach((el) => {
+                    el.innerHTML = t(lang, 'work.liveDemo') + ' <i class="bx bx-right-arrow-alt work__icon"></i>';
+                });
+
+                const contactSubtitle = document.querySelector('#contact .section__subtitle');
+                if (contactSubtitle) contactSubtitle.textContent = t(lang, 'contact.subtitle');
+                const contactTitle = document.querySelector('#contact .section__title');
+                if (contactTitle) contactTitle.textContent = t(lang, 'contact.title');
+
+                const ctTitles = document.querySelectorAll('#contact .contact__title');
+                if (ctTitles[0]) ctTitles[0].textContent = t(lang, 'contact.connectTitle');
+                if (ctTitles[1]) ctTitles[1].textContent = t(lang, 'contact.formTitle');
+
+                document.querySelectorAll('#contact .contact__button').forEach((el) => {
+                    el.innerHTML = t(lang, 'contact.connectBtn') + ' <i class="bx bx-right-arrow-alt contact__button-icon"></i>';
+                });
+
+                const nameLabel = document.querySelector('label[for="fullname"]');
+                if (nameLabel) nameLabel.textContent = t(lang, 'contact.nameLabel');
+
+                const emailLabel = document.querySelector('label[for="email"]');
+                if (emailLabel) emailLabel.textContent = t(lang, 'contact.emailLabel');
+
+                const messageLabelEl = document.querySelector('#contact .contact__form-area .contact__form-tag');
+                if (messageLabelEl) messageLabelEl.textContent = t(lang, 'contact.messageLabel');
+
+                const fullname = document.getElementById('fullname');
+                if (fullname) fullname.placeholder = t(lang, 'contact.namePlaceholder');
+
+                const email = document.getElementById('email');
+                if (email) email.placeholder = t(lang, 'contact.emailPlaceholder');
+
+                const message = document.getElementById('message');
+                if (message) message.placeholder = t(lang, 'contact.messagePlaceholder');
+
+                const submitBtn = document.querySelector('.form-submit');
+                if (submitBtn) submitBtn.textContent = t(lang, 'contact.submit');
+
+                const footerTitle = document.querySelector('.footer__title');
+                if (footerTitle) footerTitle.textContent = t(lang, 'footer.title');
+                
+                const footerLinks = document.querySelectorAll('.footer__link');
+                if (footerLinks[0]) footerLinks[0].textContent = t(lang, 'footer.home');
+                if (footerLinks[1]) footerLinks[1].textContent = t(lang, 'footer.about');
+                if (footerLinks[2]) footerLinks[2].textContent = t(lang, 'footer.projects');
+
+                const viBtn = document.getElementById('lang-vi');
+                const enBtn = document.getElementById('lang-en');
+                if (viBtn && enBtn) {
+                    viBtn.classList.toggle('active', lang === 'vi');
+                    enBtn.classList.toggle('active', lang === 'en');
+                    viBtn.setAttribute('aria-pressed', lang === 'vi' ? 'true' : 'false');
+                    enBtn.setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+                }
+            }
+
+            function bindEvents() {
+                const viBtn = document.getElementById('lang-vi');
+                const enBtn = document.getElementById('lang-en');
+                if (viBtn) viBtn.addEventListener('click', () => applyLanguage('vi'));
+                if (enBtn) enBtn.addEventListener('click', () => applyLanguage('en'));
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                bindEvents();
+                const saved = localStorage.getItem('lang') || 'vi';
+                applyLanguage(saved);
+            });
+        })();
+    </script>
+    </body>
 
 </html>
